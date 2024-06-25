@@ -1,0 +1,107 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "cantidad",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "deUnidad",
+              "type": "UNIT_LIST"
+            },
+            {
+              "name": "aUnidad",
+              "type": "UNIT_LIST"
+            }
+          ],
+          "name": "ConvertidorIntent",
+          "samples": [
+            "convert {cantidad} {deUnidad} to {aUnidad}",
+            "convert {cantidad} from {deUnidad} to {aUnidad}",
+            "I want to convert {cantidad} {deUnidad} to {aUnidad}",
+            "transform {cantidad} {deUnidad} to {aUnidad}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "m"
+                ],
+                "value": "meters"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "km"
+                ],
+                "value": "kilometers"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "cm"
+                ],
+                "value": "centimeters"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "in"
+                ],
+                "value": "inches"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "ft"
+                ],
+                "value": "feet"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "yd"
+                ],
+                "value": "yards"
+              }
+            }
+          ],
+          "name": "UNIT_LIST"
+        }
+      ],
+      "invocationName": "abelardo converter"
+    }
+  }
+}
